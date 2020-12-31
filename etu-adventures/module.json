@@ -1,0 +1,63 @@
+{
+   "name": "etu-adventures",
+   "title": "Adventure Set: East Texas University",
+   "description": "This includes all the ETU adventures and Savage Tales, from Degrees of Horror to other one shots.",
+   "author": "Freewolf2000",
+   "version": "0.1.0",
+   "minimumCoreVersion": "0.7.5",
+   "compatibleCoreVersion":"0.7.9",
+   "url": "https://github.com/Freewolf2000/etu-adventures",
+   "manifest": "https://raw.githubusercontent.com/Freewolf2000/etu-adventures/main/etu-adventures/module.json",
+   "download": "https://github.com/Freewolf2000/etu-adventures/raw/master/etu-adventures.zip",
+   "esmodules": [
+       "./scripts/etu-adventures.js"
+   ],
+   "packs": [
+     {
+         "label": "ETU Adventures Bestiary",
+         "name": "etu-adventures-bestiary",
+         "entity": "Actor",
+         "path": "packs/etu-adventures-bestiary.db",
+         "system": "swade",
+         "module": "etu-rules"
+     },
+     {
+       "label": "ETU Degrees of Horror",
+       "name": "etu-degrees-of-horror",
+       "entity": "JournalEntry",
+       "path": "packs/etu-degrees-of-horror.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Savage Tales",
+       "name": "etu-savage-tales",
+       "entity": "JournalEntry",
+       "path": "packs/etu-savage-tales.db",
+       "system": "swade",
+       "module": "etu-rules"
+     }
+   ],
+   "systems": ["swade"],
+   "dependencies": [
+     {
+        "type": "module",
+        "name": "compendium-folders",
+        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+      },
+      {
+         "type": "module",
+         "name": "gm-notes",
+         "manifest": "https://raw.githubusercontent.com/syl3r86/gm-notes/master/module.json"
+       },
+       {
+          "type": "module",
+          "name": "game-icons-net",
+          "manifest": "https://raw.githubusercontent.com/datdamnzotz/icons/master/module.json"
+        },
+      {
+        "name": "swade",
+        "type": "system"
+      }
+    ]
+}
