@@ -3,7 +3,7 @@
    "title": "Adventure Set: East Texas University",
    "description": "This includes all the ETU adventures and Savage Tales, from Degrees of Horror to other one shots.",
    "author": "Freewolf2000",
-   "version": "0.2.4",
+   "version": "0.3.0",
    "minimumCoreVersion": "0.7.5",
    "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/etu-adventures",
@@ -26,6 +26,14 @@
        "name": "etu-adventures-equipment",
        "entity": "Item",
        "path": "packs/etu-adventures-equipment.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Adventures Scenes",
+       "name": "etu-adventures-scenes",
+       "entity": "scene",
+       "path": "packs/etu-adventures-scenes.db",
        "system": "swade",
        "module": "etu-rules"
      },
